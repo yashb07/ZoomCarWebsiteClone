@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+    --primary-blue: #33414F;
+    --secondary-blue: #475B6E;
+    --pure: #FFFFFF;
+    --grey: #101010;
+    --grey-light: #EEEEEE;
+    --grey-secondary : #666666;
+    --green-accent: #A6C47C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato';
+}
+
+a {
+    text-decoration: none;
+    color: var(--pure);
+}
+
+.navbar {
+    display: flex;
+    padding: 20px 25px;
+    justify-content: space-between;
+    font-size: 18px;
+    background-color: var(--primary-blue);
+}
+
+.navbar-items a{
+    margin-left: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--pure);
+    font-size: 18px;
+}
+
+#home {
+    background-image: url('https://www.zoomcar.com/build/img/intro_bg.59b15d84c75cf310e76cc40155b90dc6.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 72vh;
+}
+
+#home .home-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10rem;
+    color: var(--pure);
+}
+
+#home .home-text h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+#home .home-text h2 {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+#home .home-text .home-btn {
+    padding: 1rem 10rem;
+    padding-left: 1rem;
+    border: 0px;
+    color: var(--grey);
+    font-size: 20px;
+    text-align: start;
+    border-radius: 5px;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+#qual {
+    background: var(--grey-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#qual .text{
+    color: var(--grey);
+    text-align: center;
+    align-items: center;
+}
+
+#qual .text h1 {
+    padding-top: 2rem;
+    color: var(--grey-secondary);
+    text-transform: uppercase;
+}
+
+#qual .text h2 {
+    font-size: 16px;
+    color: var(--grey-secondary);
+    font-weight: 100;
+    margin-top: 1rem;
+}
+
+#qual .grid {
+    display: grid;
+    margin-top: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    grid-column-gap: 1rem;
+    grid-row-gap: 0rem;
+}
+
+#qual .grid .grid-item {
+    width: 250px;
+    background: var(--pure);
+    border-radius: 10px;
+    padding: 1.5rem 1.5rem;
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+#qual .grid .grid-item img {
+    width: 25%;
+}
+
+#qual .grid .grid-item h1 {
+    color: var(--green-accent);
+    margin-top: 1rem;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+#qual .grid .grid-item h4 {
+    color: var(--grey);
+    font-size: 14px;
+    margin-top: 1rem;
+    font-weight: 100;
+}
+
+#super {
+    background-image: url('https://www.zoomcar.com/build/img/supermilers_bg.ce8bf185500c5dd96a4c1034b89e6e0c.jpg');
+    opacity: 2;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.5);
+    background-repeat: no-repeat;
+    color: var(--pure);
+}
+
+#super .super-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+#super .super-flex h1 {
+    margin-top: 2rem;
+    font-size: 28px;
+    font-weight: 450;
+    text-transform: uppercase;
+}
+
+#super .super-flex h2 {
+    margin-top: 1rem;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+#super .super-flex h4 {
+    margin-top: 1rem;
+    text-transform: uppercase;
+    font-weight: 50;
+    margin-bottom: 10rem;
+}
+
+#transition {
+    background-color: var(--grey-light);
+}
+
+#transition .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#transition .card .card-main {
+    background: var(--pure);
+    padding: 30px;
+    position: absolute;
+    margin-top: -16rem;
+    background-color: var(--pure);
+    border-radius: 10px;
+}
+
+#transition .card .card-main h1 {
+    color: var(--grey);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 550;
+    margin-top: 2rem;
+}
+
+#transition .card .card-second {
+    margin-top: 7rem;
+    width: 180px;
+}
+#transition .card .card-second h1 {
+    margin-top: 1rem;
+    font-size: 16px;
+    font-weight: 200;
+    color: var(--grey);
+}
+#transition .card .card-second .learn-btn {
+    margin: 2rem 0rem;
+    margin-top: 2rem;
+    padding: 10px 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid var(--grey);
+}
+
+#transition .card .card-second .learn-btn:hover {
+    border: 1px solid var(--green-accent);
+}
+
+#cars {
+    background-image: url('https://www.zoomcar.com/build/img/car_bg.9876fe054a2220e5a5cc8c5746991926.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--pure);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#cars .cars-text h1{
+    text-align: start;
+    margin-top: 2rem;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#cars .cars-text h4{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+#cars .cars-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0rem;
+}
+
+#cars .cars-card .left a, #cars .cars-card .right a{
+    font-size: 250px;
+    font-weight: 100;
+    padding: 25px 50px;
+    color: var(--pure);
+}
+
+#cars .cars-card img {
+    width: 75%;
+    margin-left: 2rem;
+}
+
+#cars .cars-card .cars-info {
+    text-align: start;
+    width: 40%;
+}
+
+#cars .cars-card .cars-info h1{
+    font-size: 64px;
+    text-align: start;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+#cars .cars-card .cars-info h4 {
+    font-size: 22px;
+    font-weight: 200;
+}
+
+#cars .cars-card .cars-info h6 {
+    font-size: 14px;
+    margin-top: 1rem;
+    font-weight: 100;
+}
+
+#cars .cars-filler h1{
+    font-size: 28px;
+    font-weight: 100;
+    margin-bottom: 8rem;
+}
+
+#howto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--grey-light);
+}
+
+#howto .working {
+    margin-top: 3rem;
+    color: var(--grey-secondary);
+}
+
+#howto .working h1 {
+    text-transform: uppercase;
+    color: var(--grey);
+}
+
+#howto .working h4 {
+    margin-top: 1rem;
+    font-weight: 100;
+}
+
+#howto .grid {
+    display: grid;
+    margin-top: 4rem;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+}
+
+#howto .grid .special img {
+    width: 20%;
+}
+
+#howto .grid .grid-item {
+    width: 150px;
+    background: var(--pure);
+    border-radius: 10px;
+    padding: 1.5rem 1.5rem;
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+#howto .grid .grid-item h1 {
+    color: var(--green-accent);
+    margin-top: 1rem;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+#howto .grid .grid-item h4 {
+    color: var(--grey);
+    font-size: 14px;
+    margin-top: 1rem;
+    font-weight: 100;
+}
+
+#howto .signup-btn {
+    font-size: 18px;
+    padding: 5px 50px;
+    text-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+#app {
+    background-image: url('./images/app.jpg');
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    height: 80vh;
+}
+
+#app .app-text {
+    position: absolute;
+    margin: 15rem 15rem;
+    color: var(--pure);
+    text-align: start;
+}
+
+#app .app-text h1 {
+    text-transform: uppercase;
+    text-align: start;
+}
+
+#app .app-text h4 {
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 1.5rem;
+}
+
+#app .app-btn {
+    position: absolute;
+    margin: 23rem 15rem;
+    color: var(--pure);
+}
+
+#app .app-btn .playstore-btn, .appstore-btn {
+    padding: 10px 15px;
+    border-radius: 7px;
+    margin-right: 1rem;
+}
+
+#stats .grid {
+    display: grid;
+    margin-top: 4rem;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+}
+
+#stats .grid .grid-item {
+    width: 150px;
+    background: var(--pure);
+    border-radius: 10px;
+    padding: 1.5rem 1.5rem;
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+#stats .grid .grid-item h1 {
+    color: var(--grey);
+    margin-top: 1rem;
+    font-weight: 800;
+    font-size: 28px;
+}
+
+#stats .grid .grid-item h4 {
+    color: var(--grey);
+    font-size: 18px;
+    margin-top: 1rem;
+    font-weight: 100;
+}
+
+#stats .grid .grid-item h6 {
+    color: var(--grey);
+    font-size: 14px;
+    margin-top: 0.25rem;
+    font-weight: 100;
+}
+
+#stats .grid .special {
+    width: 200px;
+}
+
+#testimonials {
+    background-image: url('./images/testimonials.jpg');
+    background-repeat: no-repeat;
+    height: 72vh;
+    /* background-size: cover; */
+}
+
+#testimonials .quote h1{
+    position: absolute;
+    font-size: 250px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: var(--green-accent);
+}
+
+#testimonials .test-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#testimonials .test-flex .left a, #testimonials .test-flex .right a{
+    font-size: 250px;
+    color: var(--pure);
+    position: relative;
+    margin-top: 5rem;
+}
+
+#testimonials .test-flex .test-info {
+    margin-top: 15rem;
+}
+
+#testimonials .test-flex .test-info h2, h1{
+    color: var(--pure);
+    font-size: 24px;
+    font-weight: 100;
+    text-align: center;
+    
+}
+
+#testimonials .test-flex .test-info h1 {
+    color: var(--green-accent);
+    margin-bottom: 1rem;
+}
+
+#news {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: var(--grey-light);
+}
+
+#news .left, a {
+    color: var(--grey);
+    font-size: 100px;
+}
+
+#news .right, a {
+    color: var(--grey);
+    font-size: 100px;
+}
+
+#links {
+    background-color: var(--secondary-blue);
+    align-items: center;
+    justify-items: center;
+}
+
+#links .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+#links .grid .grid-item {
+    width: 250px;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+#links .grid .grid-item:hover {
+    color: var(--primary-blue);
+}
+
+#links .grid .grid-item h1 {
+    color: var(--green-accent);
+    margin-top: 1rem;
+    font-weight: 200;
+    font-size: 18px;
+}
