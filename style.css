@@ -14,6 +14,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Lato';
+    box-sizing: border-box;
 }
 
 a {
@@ -64,15 +65,22 @@ a {
 }
 
 #home .home-text .home-btn {
-    padding: 1rem 10rem;
+    padding: 1rem 15rem;
     padding-left: 1rem;
-    border: 0px;
+    border: 1px;
     color: var(--grey);
     font-size: 20px;
     text-align: start;
     border-radius: 5px;
     margin-top: 2rem;
     cursor: pointer;
+}
+
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 34.5%;
 }
 
 #qual {
@@ -268,7 +276,7 @@ a {
     margin-top: 0rem;
 }
 
-#cars .cars-card .left a, #cars .cars-card .right a{
+#cars .cars-card .cars-left a, #cars .cars-card .cars-right a{
     font-size: 250px;
     font-weight: 100;
     padding: 25px 50px;
@@ -570,4 +578,71 @@ a {
     margin-top: 1rem;
     font-weight: 200;
     font-size: 18px;
+}
+
+#footer {
+    background-color: var(--primary-blue);
+}
+
+
+#footer .footer-title {
+    font-size: 18px;
+    color: var(--grey);
+    margin-top: 1rem;
+    color: var(--pure);
+}
+
+#footer .special {
+    margin-top: 0rem;
+    padding-top: 1rem;
+}
+
+#footer .about-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: row;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    align-items: center;
+    margin-top: 1rem;
+    width: 75%;
+    margin-left: 17%;
+}
+
+#footer .about-grid a{
+    font-size: 16px;
+    width: 200px;
+    color: var(--pure);
+}
+
+#footer .about-grid .special {
+    padding-bottom: 1rem;
+}
+
+#socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--primary-blue);
+    color: var(--pure);
+    padding-left: 2rem;
+    border-top: 1px solid var(--pure);
+}
+
+#socials h1 {
+    font-weight: 100;
+    margin: 1rem 0rem;
+}
+
+#socials h4 {
+    font-weight: 100;
+    margin: 1rem 1rem;
+}
+
+#socials a {
+    font-size: 20px;
+    color: var(--pure);
+    padding: 0 2rem;
+    margin-right: 1rem;
 }
