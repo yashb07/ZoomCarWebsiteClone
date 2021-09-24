@@ -605,18 +605,18 @@ a {
     grid-row-gap: 1rem;
     align-items: center;
     margin-top: 1rem;
-    width: 75%;
-    margin-left: 17%;
+    width: 80%;
+    margin-left: 15%;
 }
 
 #footer .about-grid a{
     font-size: 16px;
-    width: 200px;
+    width: 250px;
     color: var(--pure);
 }
 
 #footer .about-grid .special {
-    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 #socials {
