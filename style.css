@@ -487,6 +487,7 @@ a {
 }
 
 #testimonials .quote h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
     position: absolute;
     font-size: 250px;
     left: 50%;
