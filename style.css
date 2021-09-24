@@ -475,8 +475,12 @@ a {
     font-weight: 100;
 }
 
-#stats .grid .special {
-    width: 200px;
+#stats .grid .special,  #stats .grid .special-special{
+    width: 250px;
+}
+
+#stats .grid .special img {
+    margin: 1rem 0;
 }
 
 #testimonials {
